@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    Test Title
+{% endblock %}
+
+{% block body %}
+    <ul>
+        {% for movie in movies %}
+            <li>
+                {{ movie }}
+            </li>
+        {% endfor %}
+    </ul>
+    {{author}}
+{% endblock %}
